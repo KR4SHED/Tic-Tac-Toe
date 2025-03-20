@@ -5,7 +5,7 @@ I am trying to learn pygame and this is my first step to making video games. Thi
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ## How To Run?
-First [download](https://github.com/KR4SHED/Tic-Tac-Toe/archive/refs/heads/main.zip) the project.
+First [download](https://github.com/KR4SHED/Tic-Tac-Toe/archive/refs/heads/master.zip) the project.
 
 Next to run this project you have to download the project here or by using git clone.
 
@@ -30,9 +30,7 @@ I prefer pygame-ce because it gets more updates and is open source but it really
 Ok once you are done that open the game.py file and open with python launcher or if you want to do it in terminal cd to the file for example
 
 ```bash
-  cd downloads
-
-  cd Tic-Tac-Toe-main
+  cd downloads/Tic-Tac-Toe-main
 
   python3 game.py
 ```
