@@ -14,6 +14,9 @@ back_surf = pygame.image.load('Assets/Images/backgrnd.png').convert_alpha()
 title = font.render('Tic Tac Toe', True, '#ede1c7')
 title_rect = title.get_rect(midbottom = (240, 100))
 
+click = pygame.mouse.get_just_pressed
+pos = pygame.mouse.get_pos
+
 
 while True:
 
@@ -22,14 +25,17 @@ while True:
             pygame.quit()
             exit()
 
+
     screen.blit(back_surf,(0,0))
     screen.blit(title,title_rect)
 
     #top
-    pygame.draw.rect(screen, 'Red', (187,195,112,103))
+    if pygame.draw.rect(screen, 'Red', (187,195,112,103)).collidepoint(pos()) and click()[0]:
+        print('collision')
 
     #top left
-    pygame.draw.rect(screen, 'Red', (76,195,101,103))
+    if pygame.draw.rect(screen, 'Red', (76,195,101,103)).collidepoint(pos()) and click()[0]:
+        print('collision')
 
     #top right
     pygame.draw.rect(screen, 'Red', (308,195,103,103))
