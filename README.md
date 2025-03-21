@@ -4,10 +4,8 @@
 I am trying to learn pygame and this is my first step to making video games. This is my first game without any tutorials or guides.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-## How To Run?
-First [download](https://github.com/KR4SHED/Tic-Tac-Toe/archive/refs/heads/master.zip) the project.
-
-Next to run this project you have to download the project here or by using git clone.
+# How To Run?
+First to run this project you have to [download](https://github.com/KR4SHED/Tic-Tac-Toe/archive/refs/heads/master.zip) the project here or by using git clone.
 
 ```bash
   git clone https://github.com/KR4SHED/Tic-Tac-Toe
@@ -34,5 +32,6 @@ Ok once you are done that open the game.py file and open with python launcher or
 
   python3 game.py
 ```
+It takes a while to first startup but after you've firsted started it, it shouldn't take so long.
 
 Ok enjoy my trashy game!!!! 👍
