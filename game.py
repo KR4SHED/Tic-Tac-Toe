@@ -31,32 +31,39 @@ while True:
 
     #top
     if pygame.draw.rect(screen, 'Red', (187,195,112,103)).collidepoint(pos()) and click()[0]:
-        print('collision')
+        print('collision top')
 
     #top left
     if pygame.draw.rect(screen, 'Red', (76,195,101,103)).collidepoint(pos()) and click()[0]:
-        print('collision')
+        print('collision top left')
 
     #top right
-    pygame.draw.rect(screen, 'Red', (308,195,103,103))
+    if pygame.draw.rect(screen, 'Red', (308,195,103,103)).collidepoint(pos()) and click()[0]:
+        print('collision top right')
 
     #middle
-    pygame.draw.rect(screen, 'Red', (187,306,112,113))
+    if pygame.draw.rect(screen, 'Red', (187,306,112,113)).collidepoint(pos()) and click()[0]:
+        print('collision middle')
 
     #midlle left
-    pygame.draw.rect(screen, 'Red', (76,306,101,113))
+    if pygame.draw.rect(screen, 'Red', (76,306,101,113)).collidepoint(pos()) and click()[0]:
+        print('collision middle left')
 
     #midlle right
-    pygame.draw.rect(screen, 'Red', (308,306,103,113))
+    if pygame.draw.rect(screen, 'Red', (308,306,103,113)).collidepoint(pos()) and click()[0]:
+        print('collision middle right')
 
     #bottom
-    pygame.draw.rect(screen, 'Red', (187,427,112,102))
+    if pygame.draw.rect(screen, 'Red', (187,427,112,102)).collidepoint(pos()) and click()[0]:
+        print('collision bottom')
 
     #bottom left
-    pygame.draw.rect(screen, 'Red', (76,427,101,102))
+    if pygame.draw.rect(screen, 'Red', (76,427,101,102)).collidepoint(pos()) and click()[0]:
+        print('collision bottom left')
 
     #bottom right
-    pygame.draw.rect(screen, 'Red', (308,427,103,102))
+    if pygame.draw.rect(screen, 'Red', (308,427,103,102)).collidepoint(pos()) and click()[0]:
+        print('collision bottom right')
 
     pygame.display.update()
     clock.tick(60)
