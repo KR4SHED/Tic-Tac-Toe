@@ -31,7 +31,7 @@ while True:
 
     #top
     if pygame.draw.rect(screen, 'Red', (187,195,112,103)).collidepoint(pos()) and click()[0]:
-        print('collision top')
+        print('collision tp')
 
     #top left
     if pygame.draw.rect(screen, 'Red', (76,195,101,103)).collidepoint(pos()) and click()[0]:
