@@ -49,6 +49,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (187,195,112,103)).collidepoint(pos()) and click()[0]:
         if tp == False:
             print('collision top')
+            txo = xo
             tp = True
 
             if xo == x_surf:
@@ -61,6 +62,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (76,195,101,103)).collidepoint(pos()) and click()[0]:
         if tlp == False:
             print('collision top left')
+            tlxo = xo
             tlp = True
 
             if xo == x_surf:
@@ -72,6 +74,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (308,195,103,103)).collidepoint(pos()) and click()[0]:
         if trp == False:
             print('collision top right')
+            trxo = xo
             trp = True
 
             if xo == x_surf:
@@ -83,6 +86,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (187,306,112,113)).collidepoint(pos()) and click()[0]:
         if mp == False:
             print('collision middle')
+            mxo = xo
             mp = True
 
             if xo == x_surf:
@@ -94,6 +98,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (76,306,101,113)).collidepoint(pos()) and click()[0]:
         if mlp == False:
             print('collision middle left')
+            mlxo = xo
             mlp = True
 
             if xo == x_surf:
@@ -105,6 +110,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (308,306,103,113)).collidepoint(pos()) and click()[0]:
         if mrp == False:
             print('collision middle right')
+            mrxo = xo
             mrp = True
 
             if xo == x_surf:
@@ -116,6 +122,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (187,427,112,102)).collidepoint(pos()) and click()[0]:
         if bp == False:
             print('collision bottom')
+            bxo = xo
             bp = True
 
             if xo == x_surf:
@@ -127,6 +134,7 @@ while True:
     if pygame.draw.rect(screen, 'Red', (76,427,101,102)).collidepoint(pos()) and click()[0]:
         if blp == False:
             print('collision bottom left')
+            blxo = xo
             blp = True
 
             if xo == x_surf:
@@ -138,40 +146,40 @@ while True:
     if pygame.draw.rect(screen, 'Red', (308,427,103,102)).collidepoint(pos()) and click()[0]:
         if brp == False:
             print('collision bottom right')
+            brxo = xo
             brp = True
 
             if xo == x_surf:
                 xo = o_surf
             elif xo == o_surf:
                 xo = x_surf
-
     
     if tp == True:
-        screen.blit(xo,(187,195)).copy()
+        screen.blit(txo,(187,195)).copy()
 
     if tlp == True:
-        screen.blit(xo,(76,195)).copy()
+        screen.blit(tlxo,(76,195)).copy()
 
     if trp == True:
-        screen.blit(xo,(308,195)).copy()
+        screen.blit(trxo,(308,195)).copy()
 
     if mp == True:
-        screen.blit(xo,(187,306)).copy()
+        screen.blit(mxo,(187,306)).copy()
 
     if mlp == True:
-        screen.blit(xo,(76,306)).copy()
+        screen.blit(mlxo,(76,306)).copy()
 
     if mrp == True:
-        screen.blit(xo,(308,306)).copy()
+        screen.blit(mrxo,(308,306)).copy()
 
     if bp == True:
-        screen.blit(xo,(187,427)).copy()
+        screen.blit(bxo,(187,427)).copy()
 
     if blp == True:
-        screen.blit(xo,(76,427)).copy()
+        screen.blit(blxo,(76,427)).copy()
 
     if brp == True:
-        screen.blit(xo,(308,427)).copy()
+        screen.blit(brxo,(308,427)).copy()
 
     pygame.display.update()
     clock.tick(60)
