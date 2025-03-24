@@ -3,7 +3,7 @@ from sys import exit
 
 pygame.init()
 
-font = pygame.font.Font('Assets/Fonts/BagelFatOne-Regular.ttf', 70)
+font = pygame.font.Font(None, 100)
 
 clock = pygame.time.Clock()
 pygame.display.set_caption('Tic Tac Toe')
@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((480, 580))
 
 back_surf = pygame.image.load('Assets/Images/backgrnd.png').convert_alpha()
 
-title = font.render('Tic Tac Toe', True, '#ede1c7')
+title = font.render('Tic Tac Toe', True, 'Black')
 title_rect = title.get_rect(midbottom = (240, 100))
 
 click = pygame.mouse.get_just_pressed
