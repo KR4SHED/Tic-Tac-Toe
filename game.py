@@ -3,7 +3,8 @@ from sys import exit
 
 pygame.init()
 
-font = pygame.font.Font(None, 100)
+font = pygame.font.Font('Assets/Fonts/Super-Cottage.ttf', 75)
+outline = pygame.font.Font('Assets/Fonts/Super-Cottage.ttf', 80)
 
 clock = pygame.time.Clock()
 pygame.display.set_caption('Tic Tac Toe')
@@ -11,8 +12,10 @@ screen = pygame.display.set_mode((480, 580))
 
 back_surf = pygame.image.load('Assets/Images/backgrnd.png').convert_alpha()
 
-title = font.render('Tic Tac Toe', True, 'Black')
+title = font.render('Tic Tac Toe', True, '#ba8b57')
+outline_surf = outline.render('Tic Tac Toe', True, '#a37848')
 title_rect = title.get_rect(midbottom = (240, 100))
+outline_rect = outline_surf.get_rect(midbottom = (240, 100))
 
 click = pygame.mouse.get_just_pressed
 pos = pygame.mouse.get_pos
@@ -43,6 +46,7 @@ while True:
 
 
     screen.blit(back_surf,(0,0))
+    screen.blit(outline_surf,outline_rect)
     screen.blit(title,title_rect)
 
     #top
