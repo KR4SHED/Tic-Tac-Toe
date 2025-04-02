@@ -44,6 +44,17 @@ while True:
             pygame.quit()
             exit()
 
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
+            tp = False
+            tlp = False
+            trp = False
+            mp = False
+            mlp = False
+            mrp = False
+            bp = False
+            blp = False
+            brp = False
+
 
     screen.blit(back_surf,(0,0))
     screen.blit(outline_surf,outline_rect)
@@ -184,6 +195,7 @@ while True:
 
     if brp == True:
         screen.blit(brxo,(308,427)).copy()
+
 
     pygame.display.update()
     clock.tick(60)
